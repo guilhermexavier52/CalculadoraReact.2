@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.calculadora-container {
+    background-color: #3b3b3b;
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #424242;
+    color: #ffffff;
+}
+
+.teclado button {
+    width: 22%;
+    max-width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #4CAF50;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+button:last-child {
+    width: 100%;
+    background-color: #f44336;
+}
+
+.limpar{
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #4CAF50;
+    transition: background-color 0.3s
+}
+
+.resultado-container {
+    text-align: right;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .calculadora-container {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    button, .limpar {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
